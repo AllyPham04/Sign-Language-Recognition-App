@@ -62,6 +62,7 @@ def process_video(source='webcam', show=True):
             pose_kp = extract_pose_keypoints(pose_results)
             lh_kp, rh_kp = extract_hand_keypoints(hands_results)
             all_kp = np.concatenate([pose_kp, lh_kp, rh_kp])
+            all_kp = all_kp.tolist()
             keypoints_list.append(all_kp)
 
             if source == 'webcam' and (cv2.waitKey(1) & 0xFF == ord('q')):
@@ -85,7 +86,5 @@ def extract_keypoints_from_video(path, start_index, end_index):
         video_id = file.split('.')[0]
         print(f'Extracting keypoints from video {file}')
         keypoints = process_video(file)
-        merged = merge_keypoints(keypoints)
-        print("Shape of merged keypoints:", merged.shape)  # (num_frames, total_features)
         keypoints_and_id.loc[len(keypoints_and_id)] = [video_id, keypoints]
     return keypoints_and_id
