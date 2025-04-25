@@ -84,7 +84,7 @@ def extract_keypoints_from_video(path, start_index, end_index):
     for file in all_files[start_index:end_index]: #lấy từ file nào đến file nào thì tự sửa vào đây
         video_id = file.split('.')[0]
         print(f'Extracting keypoints from video {file}')
-        keypoints, save_image = process_video(file)
+        keypoints = process_video(file)
         merged = merge_keypoints(keypoints)
         print("Shape of merged keypoints:", merged.shape)  # (num_frames, total_features)
         keypoints_and_id.loc[len(keypoints_and_id)] = [video_id, keypoints]
