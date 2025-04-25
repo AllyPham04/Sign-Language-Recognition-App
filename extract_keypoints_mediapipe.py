@@ -73,9 +73,6 @@ def process_video(source='webcam', show=True):
         cv2.destroyAllWindows() #destroy (close) all windows that appear in the time of running code
     return keypoints_list
 
-def merge_keypoints(keypoints_list):
-    return np.array(keypoints_list)
-
 def extract_keypoints_from_video(path, start_index, end_index):
     all_files = os.listdir(path)
     keypoints_and_id = pd.DataFrame(columns=['video_id', 'keypoints'])
