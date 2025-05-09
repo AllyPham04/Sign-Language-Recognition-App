@@ -18,3 +18,4 @@ matplotlib==3.8.0
 tqdm==4.66.1
 torch>=2.0
 torchvision>=0.15
+gradio==5.26.0
