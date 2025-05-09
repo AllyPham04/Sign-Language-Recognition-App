@@ -7,7 +7,7 @@ import pandas as pd
 import os
 import glob
 
-interpreter = tf.lite.Interpreter("model_sign_language.tflite")
+interpreter = tf.lite.Interpreter("model/model_sign_language.tflite")
 interpreter.allocate_tensors()
 # Get input and output tensors
 found_signatures = list(interpreter.get_signature_list().keys())
