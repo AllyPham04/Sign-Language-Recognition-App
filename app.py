@@ -14,11 +14,11 @@ found_signatures = list(interpreter.get_signature_list().keys())
 print("Found signatures:", found_signatures)
 prediction_fn = interpreter.get_signature_runner("serving_default")
 
-ord2sign_df = pd.read_csv('ord2sign.csv')
+ord2sign_df = pd.read_csv('data/ord2sign.csv')
 ord2sign = ord2sign_df.set_index('sign_ord')['sign'].to_dict()
 
 def get_sign_videos():
-    video_files = glob.glob("videos/*.mp4")
+    video_files = glob.glob("data/videos/*.mp4")
     sign_videos = {}
     
     for video_file in video_files:
@@ -135,7 +135,6 @@ def extract_landmarks_from_video(video_path):
         return df
     else:
         return None
-
 
 def process_video_to_csv(video):
     df = extract_landmarks_from_video(video)
