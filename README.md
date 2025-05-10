@@ -118,7 +118,7 @@ conda activate myenv
 
 We have already trained and saved the model as `model_sign_language.tflite` in the `model/` folder.
 
-If you want to start the project from the beginning, please download the preprocessed data in **Sign Language Preprocessed Data**, then run:
+If you want to start the project from the beginning, please download the preprocessed data in [**Sign Language Preprocessed Data**](https://www.kaggle.com/competitions/asl-signs), then run:
 
 ```bash
 py get_model.py
