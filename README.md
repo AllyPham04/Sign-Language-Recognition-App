@@ -64,6 +64,7 @@ This project follows a structured deep learning pipeline for American Sign Langu
 ---
 
 ## 📂 Folder Structure
+'''
 .
 ├── data/
 │   ├── videos/                        # Videos used for testing and reference
@@ -81,3 +82,4 @@ This project follows a structured deep learning pipeline for American Sign Langu
 ├── requirements.txt                  # Python dependencies for reproducing the environment
 ├── .gitignore                        # Git ignore file
 └── README.md                         # Project documentation
+'''
