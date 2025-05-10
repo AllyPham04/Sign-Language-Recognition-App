@@ -449,7 +449,7 @@ class WeightDecayCallback(tf.keras.callbacks.Callback):
     def on_epoch_begin(self, epoch, logs=None):
         self.model.optimizer.weight_decay = self.model.optimizer.learning_rate * self.wd_ratio
 
-# TFLite model for submission
+# TFLite model
 class TFLiteModel(tf.Module):
     def __init__(self, model, preprocess_layer):
         super(TFLiteModel, self).__init__()
