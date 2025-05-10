@@ -76,11 +76,15 @@ This project follows a structured deep learning pipeline for American Sign Langu
 │   └── model_sign_language.tflite    # Trained TensorFlow Lite model (~100K samples)
 │
 ├── steps/                            # Source code for preprocessing and training
-│   └── get_model.py                  # Script to define and train the model
+│   └── constants.py                  # Script to list constants in the model
+│   └── preprocess.py                 # Script to define function for preprocessing the model
+│   └── set_up_model.py               # Script to define the function for TFLite model
 │
-├── app.py                            # Gradio interface app for deployment on Hugging Face
-├── requirements.txt                  # Python dependencies for reproducing the environment
 ├── .gitignore                        # Git ignore file
+├── extract_keypoints_mediapipe.py    # Script to extract keypoints from video using MediaPipe
+├── app.py                            # Gradio interface app for deployment on Hugging Face
+├── get_model.py                      # Script to define and train the model
+├── requirements.txt                  # Python dependencies for reproducing the environment
 └── README.md                         # Project documentation
 ```
 ## 🖥 Installation
