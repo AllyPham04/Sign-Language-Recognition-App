@@ -2,7 +2,7 @@
 
 ## 📌 Introduction
 
-### Background
+### 📊 Background
 Approximately 90% of deaf children are born to hearing parents, many of whom may not be familiar with American Sign Language (ASL) ([kdhe.ks.gov](https://kdhe.ks.gov), [deafchildren.org](https://www.deafchildren.org)). Without early exposure to sign language, these children are at risk of developing **Language Deprivation Syndrome**, a condition caused by the lack of accessible language input during the critical language acquisition period. This can severely impact their ability to build relationships, succeed in education, and find future employment.
 
 To support early learning of ASL, the **Isolated Sign Language Recognition Dataset (v1.0)** provides ~100,000 video samples of 250 signs performed by 21 Deaf signers. Hand, face, and body landmarks were extracted using **MediaPipe v0.9.0.1**, creating a rich set of features for training recognition models.
@@ -83,7 +83,7 @@ This project follows a structured deep learning pipeline for American Sign Langu
 ├── .gitignore                        # Git ignore file
 └── README.md                         # Project documentation
 ```
-## Installation
+## 🖥 Installation
 
 To get started with the project, follow the steps below:
 
