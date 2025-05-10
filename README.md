@@ -81,7 +81,6 @@ This project follows a structured deep learning pipeline for American Sign Langu
 │   └── set_up_model.py               # Script to define the function for TFLite model
 │
 ├── .gitignore                        # Git ignore file
-├── extract_keypoints_mediapipe.py    # Script to extract keypoints from video using MediaPipe
 ├── app.py                            # Gradio interface app for deployment on Hugging Face
 ├── get_model.py                      # Script to define and train the model
 ├── requirements.txt                  # Python dependencies for reproducing the environment
