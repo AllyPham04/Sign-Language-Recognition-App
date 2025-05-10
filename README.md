@@ -45,7 +45,7 @@ This system integrates **computer vision**, **machine learning**, and **interact
 
 The model returns the **top-10 predicted signs** with confidence scores and is optimized for smooth interaction across devices.
 
-## Project Overview
+### Project Overview
 ![image](https://github.com/user-attachments/assets/6bc85e1b-e2b4-4724-9486-8198115009d9)
 
 This project follows a structured deep learning pipeline for American Sign Language recognition. The main steps include:
@@ -64,21 +64,20 @@ This project follows a structured deep learning pipeline for American Sign Langu
 ---
 
 ## 📂 Folder Structure
-
 .
 ├── data/
-│ ├── videos/ # Videos used for testing and reference
-│ ├── ord2sign.csv # Maps sign index (sign_ord) to sign name
-│ ├── sign_to_prediction_index_map/ # Index mapping for signs
-│ └── train/ # Training landmark files (as described above)
+│   ├── videos/                        # Videos used for testing and reference
+│   ├── ord2sign.csv                  # Maps sign index (sign_ord) to sign name
+│   ├── sign_to_prediction_index_map/ # Index mapping for signs
+│   └── train/                        # Training landmark files (as described above)
 │
 ├── model/
-│ └── model_sign_language.tflite # Trained TensorFlow Lite model (~100K samples)
+│   └── model_sign_language.tflite    # Trained TensorFlow Lite model (~100K samples)
 │
-├── steps/ # Source code for preprocessing and training
-│ └── get_model.py # Script to define and train the model
+├── steps/                            # Source code for preprocessing and training
+│   └── get_model.py                  # Script to define and train the model
 │
-├── app.py # Gradio interface app for deployment on Hugging Face
-├── requirements.txt # Python dependencies for reproducing the environment
-├── .gitignore # Git ignore file
-└── README.md # Project documentation
+├── app.py                            # Gradio interface app for deployment on Hugging Face
+├── requirements.txt                  # Python dependencies for reproducing the environment
+├── .gitignore                        # Git ignore file
+└── README.md                         # Project documentation
