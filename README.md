@@ -64,7 +64,7 @@ This project follows a structured deep learning pipeline for American Sign Langu
 ---
 
 ## 📂 Folder Structure
-'''
+```
 .
 ├── data/
 │   ├── videos/                        # Videos used for testing and reference
@@ -82,4 +82,52 @@ This project follows a structured deep learning pipeline for American Sign Langu
 ├── requirements.txt                  # Python dependencies for reproducing the environment
 ├── .gitignore                        # Git ignore file
 └── README.md                         # Project documentation
-'''
+```
+## Installation
+
+To get started with the project, follow the steps below:
+
+### 1. Clone the Repository
+
+Clone the repository from GitHub:
+
+```bash
+git clone https://github.com/AllyPham04/ML-Ops
+```
+
+> (Cho vào trong box như thế này:  
+> `git clone https://github.com/prsdm/ml-project.git`)
+
+---
+
+### 2. Set up the Environment
+
+Create a virtual environment and install the necessary packages:
+
+```bash
+conda create --name myenv
+pip install -r requirements.txt
+```
+
+After creating all packages successfully, use that environment to run the system:
+
+```bash
+conda activate myenv
+```
+
+---
+
+### 3. Train Model
+
+We have already trained and saved the model as `model_sign_language.tflite` in the `model/` folder.
+
+If you want to start the project from the beginning, please download the preprocessed data in **Sign Language Preprocessed Data**, then run:
+
+```bash
+py get_model.py
+```
+
+This script will load the preprocessed data, train the model, and save the trained model to the `model/` directory.
+
+> **Note:** If you want to directly test the system, you can SKIP this step.
+
