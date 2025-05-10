@@ -1,6 +1,6 @@
 # Sign Language Recognition ML-Ops
 
-## Introduction
+## 📌 Introduction
 
 ### Background
 Approximately 90% of deaf children are born to hearing parents, many of whom may not be familiar with American Sign Language (ASL) ([kdhe.ks.gov](https://kdhe.ks.gov), [deafchildren.org](https://www.deafchildren.org)). Without early exposure to sign language, these children are at risk of developing **Language Deprivation Syndrome**, a condition caused by the lack of accessible language input during the critical language acquisition period. This can severely impact their ability to build relationships, succeed in education, and find future employment.
@@ -26,13 +26,13 @@ Each row includes:
 
 > ⚠️ Landmark data is not intended for identity recognition or biometric identification.
 
-### Objectives
+### 🎯 Objectives
 
 This project aims to build a model capable of **classifying isolated ASL signs** from landmark sequences. Using TensorFlow Lite and the MediaPipe Holistic pipeline, the trained model can infer signs in real time from user-uploaded or recorded videos.
 
 The results may contribute to improving **PopSign\*** — an educational tool that helps families of deaf children learn and practice basic ASL for better communication.
 
-### Technique
+### 🧠 Technique
 
 This system integrates **computer vision**, **machine learning**, and **interactive user interfaces** for isolated ASL recognition. Key components include:
 
@@ -45,7 +45,7 @@ This system integrates **computer vision**, **machine learning**, and **interact
 
 The model returns the **top-10 predicted signs** with confidence scores and is optimized for smooth interaction across devices.
 
-### Project Overview
+### 🚀 Project Overview
 ![image](https://github.com/user-attachments/assets/6bc85e1b-e2b4-4724-9486-8198115009d9)
 
 This project follows a structured deep learning pipeline for American Sign Language recognition. The main steps include:
@@ -87,7 +87,7 @@ This project follows a structured deep learning pipeline for American Sign Langu
 
 To get started with the project, follow the steps below:
 
-### 1. Clone the Repository
+### Clone the Repository
 
 Clone the repository from GitHub:
 
@@ -97,7 +97,7 @@ git clone https://github.com/AllyPham04/ML-Ops
 
 ---
 
-### 2. Set up the Environment
+### Set up the Environment
 
 Create a virtual environment and install the necessary packages:
 
@@ -114,7 +114,7 @@ conda activate myenv
 
 ---
 
-### 3. Train Model
+### Train Model
 
 We have already trained and saved the model as `model_sign_language.tflite` in the `model/` folder.
 
@@ -128,10 +128,10 @@ This script will load the preprocessed data, train the model, and save the train
 
 > **Note:** If you want to directly test the system, you can SKIP this step.
 
-### 4. Hugging Face
+### Hugging Face
 We have deployed this system on HuggingFace. You can view it here. (CHÈN LINK)
 
-## IV. Results
+## 📄 Results
 
 ![image](https://github.com/user-attachments/assets/15bd6896-a743-4ff8-9d6d-4d67500ec0f0)
 
@@ -147,7 +147,7 @@ Looking at the weights of the model, we can see that the weights are allocated q
 
 ---
 
-## V. Future Works
+## 🔎 Future Works
 
 For future development, we plan to:
 
@@ -157,10 +157,10 @@ For future development, we plan to:
 
 These improvements will bring the system closer to real-world applications and increase its usefulness for learners and families of deaf individuals.
 
-VI. References
-# Mlops_Project_K64
+## 🔏 References
+### Mlops_Project_K64
 
-## Environment
+#### Environment
 
 Initial env
 ```bash
