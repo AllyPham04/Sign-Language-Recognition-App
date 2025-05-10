@@ -95,6 +95,7 @@ tflite_model = keras_model_converter.convert()
 with open('model/model_sign_language.tflite', 'wb') as f:
     f.write(tflite_model)
 
+# Predict
 interpreter = tf.lite.Interpreter("model/model_sign_language.tflite")
 found_signatures = list(interpreter.get_signature_list().keys())
 prediction_fn = interpreter.get_signature_runner("serving_default")
