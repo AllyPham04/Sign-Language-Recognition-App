@@ -11,12 +11,12 @@ To support early learning of ASL, the **Isolated Sign Language Recognition Datas
   Contains landmark data per video sequence. Extracted using MediaPipe Holistic.  
   > ⚠️ Not all frames necessarily contain detectable hand landmarks.
 
-Each row includes:
-- `frame`: Frame number in the original video  
-- `row_id`: Unique identifier  
-- `type`: One of `['face', 'left_hand', 'pose', 'right_hand']`  
-- `landmark_index`: Index of the landmark  
-- `x`, `y`, `z`: Normalized spatial coordinates (z may be unreliable)
+  Each row includes:
+  - `frame`: Frame number in the original video  
+  - `row_id`: Unique identifier  
+  - `type`: One of `['face', 'left_hand', 'pose', 'right_hand']`  
+  - `landmark_index`: Index of the landmark  
+  - `x`, `y`, `z`: Normalized spatial coordinates (z may be unreliable)
 
 - `train.csv`  
   - `path`: Path to the `.parquet` file  
