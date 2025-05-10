@@ -95,9 +95,6 @@ Clone the repository from GitHub:
 git clone https://github.com/AllyPham04/ML-Ops
 ```
 
-> (Cho vào trong box như thế này:  
-> `git clone https://github.com/prsdm/ml-project.git`)
-
 ---
 
 ### 2. Set up the Environment
@@ -131,3 +128,74 @@ This script will load the preprocessed data, train the model, and save the train
 
 > **Note:** If you want to directly test the system, you can SKIP this step.
 
+### 4. Hugging Face
+We have deployed this system on HuggingFace. You can view it here. (CHÈN LINK)
+
+## IV. Results
+
+![image](https://github.com/user-attachments/assets/15bd6896-a743-4ff8-9d6d-4d67500ec0f0)
+
+After 60 epochs, the loss of the model has decreased significantly. From the loss of 4.4 in the first epoch, it has plummeted to 1.1 in the last epoch, proving its efficiency in training.
+
+![image](https://github.com/user-attachments/assets/6d3b0331-e656-40f4-a7ef-4dc01ae458d4)
+
+The model accuracy improved crucially after training. The starting accuracy lies at 0.18, but after 60 epochs, it reached an accuracy of over 0.9, close to 1, demonstrating its precision in predicting
+
+![image](https://github.com/user-attachments/assets/f5f3aa17-b081-4ad7-9527-b5aa3db7e86d)
+
+Looking at the weights of the model, we can see that the weights are allocated quite evenly between embedding points. The most important points are in the right hand, due to the dominance in the number of right handed people over left handed people. The dataset consists of keypoints extracted from videos of real people signing, so it is apparent that with the larger number of people using their right hand as their primary signing hand, the model is more sensitive towards right hand movements, hence the higher weights. Moreover, pose keypoints are not as important as hand keypoints, as ASL mainly focuses on hand movements. But overall, the weights of the embeddings do not differ much.
+
+---
+
+## V. Future Works
+
+For future development, we plan to:
+
+- **Expand the model's vocabulary** by training on a larger dataset of ASL signs to improve recognition coverage.
+- **Enhance the user interface** for a more intuitive and engaging user experience.
+- **Support sentence-level recognition** by allowing users to string together multiple isolated signs into complete sentences, moving toward more natural and expressive sign language communication.
+
+These improvements will bring the system closer to real-world applications and increase its usefulness for learners and families of deaf individuals.
+
+VI. References
+# Mlops_Project_K64
+
+## Environment
+
+Initial env
+```bash
+conda create -n bankmkt python=3.8 -y
+conda activate bankmkt
+pip install -r requirements.txt
+``` 
+
+Chạy lệnh sau để conda tự tạo env bankmkt
+```bash
+conda env create -f environment.yml
+```
+Lệnh chạy api
+```bash
+uvicorn api.main:app --reload
+```
+
+lệnh test_main
+```bash
+pytest api/test_main.py
+```
+lệnh chạy query_live_api
+```bash
+python api/query_live_api.py
+```
+lệnh chạy streamlit
+```bash
+streamlit run api/app.py
+```
+public link Bank Marketing App
+```bash
+https://mlops-project-k64.onrender.com
+```
+
+<p align="left">
+  <a href="https://mlopsprojectk64.streamlit.app" target="_blank">
+    <img src="https://img.shields.io/badge/Launch_App-red?style=for-the-badge" alt="Bank Marketing App" width="200"/>
+  </a>
