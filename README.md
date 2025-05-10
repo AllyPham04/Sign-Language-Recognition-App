@@ -132,7 +132,7 @@ This script will load the preprocessed data, train the model, and save the train
 > **Note:** If you want to directly test the system, you can SKIP this step.
 
 ### Hugging Face
-We have deployed this system on HuggingFace. You can view it here. (CHÈN LINK)
+We have deployed this system on HuggingFace. You can view it [here](https://allypham-signlanguagelearningapp.hf.space/).
 
 ## 📄 Results
 
@@ -161,42 +161,8 @@ For future development, we plan to:
 These improvements will bring the system closer to real-world applications and increase its usefulness for learners and families of deaf individuals.
 
 ## 🔏 References
-### Mlops_Project_K64
-
-#### Environment
-
-Initial env
-```bash
-conda create -n bankmkt python=3.8 -y
-conda activate bankmkt
-pip install -r requirements.txt
-``` 
-Chạy lệnh sau để conda tự tạo env bankmkt
-```bash
-conda env create -f environment.yml
-```
-Lệnh chạy api
-```bash
-uvicorn api.main:app --reload
-```
-Lệnh test_main
-```bash
-pytest api/test_main.py
-```
-Lệnh chạy query_live_api
-```bash
-python api/query_live_api.py
-```
-Lệnh chạy streamlit
-```bash
-streamlit run api/app.py
-```
-Public link Bank Marketing App
-```bash
-https://mlops-project-k64.onrender.com
-```
-
-<p align="left">
-  <a href="https://mlopsprojectk64.streamlit.app" target="_blank">
-    <img src="https://img.shields.io/badge/Launch_App-red?style=for-the-badge" alt="Bank Marketing App" width="200"/>
-  </a>
+1. (https://www.kaggle.com/competitions/asl-signs)
+2. (https://www.kaggle.com/competitions/asl-fingerspelling/discussion/434485)
+3. (https://www.kaggle.com/code/markwijkhuizen/gislr-tf-data-processing-transformer-training)
+4. (https://www.youtube.com/watch?v=L-IaQch8KYY)
+5. (https://www.youtube.com/watch?v=-UXYAAqm9fE)
