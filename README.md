@@ -67,7 +67,7 @@ This project follows a structured deep learning pipeline for American Sign Langu
 ```
 .
 ├── data/
-│   ├── videos/                        # Videos used for testing and reference
+│   ├── videos/                        # Videos used for testing and inference
 │   ├── ord2sign.csv                  # Maps sign index (sign_ord) to sign name
 │   ├── sign_to_prediction_index_map/ # Index mapping for signs
 │   └── train/                        # Training landmark files (as described above)
