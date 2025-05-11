@@ -46,7 +46,7 @@ This system integrates **computer vision**, **machine learning**, and **interact
 The model returns the **top-10 predicted signs** with confidence scores and is optimized for smooth interaction across devices.
 
 ### 🚀 Project Overview
-![image](https://github.com/user-attachments/assets/6bc85e1b-e2b4-4724-9486-8198115009d9)
+![image](https://github.com/user-attachments/assets/9bec01df-1702-4b80-b854-bd7bdda5a281)
 
 This project follows a structured deep learning pipeline for American Sign Language recognition. The main steps include:
 
